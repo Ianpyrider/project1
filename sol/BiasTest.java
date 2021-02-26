@@ -17,7 +17,7 @@ public class BiasTest {
      */
 
     // the list of candidate objects to generate the tree on
-    static ListObjsData<Candidate> candidates;
+    static ListObjsDataOld<Candidate> candidates;
 
     /**
      * A method to set up candidate attributes and training data

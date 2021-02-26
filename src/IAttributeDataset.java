@@ -1,5 +1,6 @@
 package src;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public interface IAttributeDataset<T extends IAttributeDatum> {
@@ -22,4 +23,6 @@ public interface IAttributeDataset<T extends IAttributeDatum> {
 
     // get the most common value for ofAttribute in the dataset
     public Object mostCommonValue(String ofAttribute);
+
+    public ArrayList<Vegetable> getData();
 }

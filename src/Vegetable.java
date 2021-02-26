@@ -2,12 +2,14 @@ package src;
 
 public class Vegetable implements IAttributeDatum {
     public String color;
-    public Boolean lowCarb;
-    public Boolean highFiber;
-    public Boolean likeToEat;
+    public boolean lowCarb;
+    public boolean highFiber;
+    public boolean likeToEat;
+    public String name;
 
     //For known data, corresponds to a row in the data
-    public Vegetable(String color, Boolean lowCarb, Boolean highFiber, Boolean likeToEat) {
+    public Vegetable(String name, String color, boolean lowCarb, boolean highFiber, boolean likeToEat) {
+        this.name = name;
         this.color = color;
         this.lowCarb = lowCarb;
         this.highFiber = highFiber;
@@ -31,5 +33,9 @@ public class Vegetable implements IAttributeDatum {
         else {
             throw new RuntimeException("Invalid attribute");
         }
+    }
+
+    public String getName() {
+        return name;
     }
 }
